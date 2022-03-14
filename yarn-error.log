@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\German\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add –dev eslint-config-airbnb
+
+PATH: 
+  C:\Program Files\Zulu\zulu-11\bin\;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Diurno\NetBeans\NetBeans-12.6\netbeans\java\maven\bin;C:\Diurno\oracle\instantclient_19_12;C:\Users\German\AppData\Local\Microsoft\WindowsApps;C:\Users\German\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\German\AppData\Roaming\npm;C:\Diurno\NetBeans\NetBeans-12.6\netbeans\java\maven\bin;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: https://registry.yarnpkg.com/–dev: Request path contains unescaped characters
+      at new NodeError (node:internal/errors:371:5)
+      at new ClientRequest (node:_http_client:154:13)
+      at Object.request (node:https:353:10)
+      at Request.module.exports.Request.start (C:\Users\German\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141445:32)
+      at Request.module.exports.Request.end (C:\Users\German\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:142204:10)
+      at end (C:\Users\German\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141258:14)
+      at Immediate.<anonymous> (C:\Users\German\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141272:7)
+      at processImmediate (node:internal/timers:464:21)
+
+npm manifest: 
+  {
+    "name": "react-weather-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "webpack-dev-server --open",
+      "build": "NODE_ENV=development webpack -p"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cross-env": "^7.0.3",
+      "react": "^16.14.0",
+      "react-dom": "^16.14.0",
+      "yarn": "^1.22.17"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.2.3",
+      "@babel/core": "^7.2.2",
+      "@babel/plugin-proposal-class-properties": "^7.2.3",
+      "@babel/polyfill": "^7.2.5",
+      "@babel/preset-env": "^7.2.3",
+      "@babel/preset-react": "^7.0.0",
+      "babel-loader": "^8.0.5",
+      "css-loader": "^2.1.0",
+      "eslint": "^8.11.0",
+      "eslint-plugin-react": "^7.29.3",
+      "html-webpack-plugin": "^3.2.0",
+      "mini-css-extract-plugin": "^0.5.0",
+      "style-loader": "^0.23.1",
+      "webpack": "^4.28.4",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
